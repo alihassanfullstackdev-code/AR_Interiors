@@ -1,0 +1,107 @@
+import React from 'react';
+import { ArrowDown, ChevronRight } from 'lucide-react';
+import { motion } from 'motion/react';
+
+interface HeroSectionProps {
+  onExploreClick: () => void;
+  onOpenContact: () => void;
+}
+
+export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpenContact }) => {
+  const scrollToAbout = () => {
+    const el = document.getElementById('about');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  return (
+    <section id="home" className="relative h-screen min-h-[600px] w-full overflow-hidden">
+      {/* Main Hero Visual Full Screen */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.05 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
+        className="absolute inset-0 bg-[#1a1815]"
+      >
+        <img
+          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=85"
+          alt="Designing Spaces That Define Luxury"
+          className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1]"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
+      </motion.div>
+
+      {/* Hero Content Overlay */}
+      <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex flex-col justify-end pb-20 sm:pb-28">
+        <div className="max-w-3xl">
+          <motion.h1
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="font-serif-luxury text-5xl sm:text-7xl lg:text-8xl font-light text-white leading-[1.05] tracking-tight mb-4 sm:mb-6"
+          >
+            Designing Spaces <br />
+            That Define Luxury
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 25 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.35 }}
+            className="text-white/80 text-sm sm:text-base lg:text-lg max-w-xl font-light leading-relaxed mb-8 sm:mb-10"
+          >
+            Explore exclusive interiors designed for comfort elegance and modern living Nationwide.
+          </motion.p>
+
+          {/* Action Buttons */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.5 }}
+            className="flex flex-wrap items-center gap-4 sm:gap-6"
+          >
+            <div className="flex items-center gap-2">
+              <button
+                onClick={onExploreClick}
+                className="bg-white text-[#1c1a17] hover:bg-[#f5f2eb] px-6 py-3.5 rounded-md text-sm font-semibold tracking-wide transition-colors shadow-lg cursor-pointer"
+              >
+                Explore Designs
+              </button>
+              <button
+                onClick={onExploreClick}
+                className="bg-white text-[#1c1a17] hover:bg-[#f5f2eb] w-12 h-[50px] rounded-md flex items-center justify-center transition-colors shadow-lg cursor-pointer"
+                aria-label="Explore Designs"
+              >
+                <ChevronRight className="w-5 h-5" />
+              </button>
+            </div>
+
+            <button
+              onClick={onOpenContact}
+              className="text-white hover:text-white/80 text-sm font-medium tracking-wide transition-colors cursor-pointer border-b border-white pb-0.5"
+            >
+              Book a Private Tour
+            </button>
+          </motion.div>
+        </div>
+
+        {/* Bottom Right Scroll Down Button */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.6 }}
+          className="absolute bottom-10 right-8 sm:bottom-12 sm:right-12"
+        >
+          <button
+            onClick={scrollToAbout}
+            aria-label="Scroll to About Section"
+            className="w-10 h-10 rounded-full border border-white/50 text-white flex items-center justify-center hover:bg-white hover:text-[#1c1a17] transition-all duration-300 cursor-pointer group"
+          >
+            <ArrowDown className="w-4 h-4 transition-transform group-hover:translate-y-0.5" />
+          </button>
+        </motion.div>
+      </div>
+    </section>
+  );
+};

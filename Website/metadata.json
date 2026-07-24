@@ -1,0 +1,6 @@
+{
+  "name": "ELORIA - Luxury Interior Design",
+  "description": "Timeless luxury interior architecture, bespoke spatial curation, and high-end residential design.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

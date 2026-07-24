@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# IMPORTANT: Replace the URL below with your actual website domain once hosted
+Sitemap: https://www.yourwebsite.com/sitemap.xml
