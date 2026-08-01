@@ -26,10 +26,10 @@ export interface ListingItem {
   id: string;
   title: string;
   location: string;
-  price: string;
+  price?: string;
   imageUrl: string;
   category: string;
-  specs: {
+  specs?: {
     beds: number;
     baths: number;
     sqft: string;

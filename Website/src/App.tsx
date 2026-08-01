@@ -9,6 +9,7 @@ import { FooterSection } from './components/FooterSection';
 import { ContactModal } from './components/ContactModal';
 import { ListingDetailModal } from './components/ListingDetailModal';
 import { WhatsAppButton } from './components/WhatsAppButton';
+import { ImagePreloader } from './components/ImagePreloader';
 import { ListingItem } from './types';
 
 export function App() {
@@ -38,6 +39,7 @@ export function App() {
 
   return (
     <div className="min-h-screen bg-[#f5f2eb] text-[#1c1a17] selection:bg-[#a88a58] selection:text-white font-sans antialiased">
+      <ImagePreloader />
       {/* Navigation Bar */}
       <Navbar
         onOpenContact={() => {

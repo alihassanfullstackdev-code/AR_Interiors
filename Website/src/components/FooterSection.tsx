@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { FOOTER_LETTERS } from '../data/arInteriorData';
 import { motion, AnimatePresence } from 'motion/react';
 import { ArrowUpRight, ChevronRight } from 'lucide-react';
 
@@ -10,8 +9,6 @@ interface FooterSectionProps {
 
 export const FooterSection: React.FC<FooterSectionProps> = ({ onNavClick, onOpenContact }) => {
   const [activeLetter, setActiveLetter] = useState<string | null>(null);
-
-  const activePreview = FOOTER_LETTERS.find((item) => item.letter === activeLetter);
 
   return (
     <footer className="bg-[#4a4641] text-[#f5f2eb] pt-20 relative overflow-hidden">
@@ -116,12 +113,25 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onNavClick, onOpen
         </div>
 
         {/* Bottom Bar / Copyright */}
-        <div className="py-6 border-t border-white/20 border-dashed flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-white/70 font-medium">
-          <div>
+        <div className="py-6 border-t border-white/20 border-dashed flex flex-col md:flex-row items-center justify-between gap-4 text-[11px] text-white/70 font-medium">
+          <div className="order-2 md:order-1">
             @2026 AR Interior & Design copyright. All right reserved
           </div>
 
-          <div className="flex items-center gap-1">
+          <div className="flex items-center gap-2 order-1 md:order-2">
+            <span>Developed By:</span>
+            <a 
+              href="https://alihassan96.vercel.app/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="px-2.5 py-1.5 bg-white/5 hover:bg-white/10 text-white border border-white/10 rounded-md transition-all duration-300 flex items-center gap-1 group"
+            >
+              ApexCodeZ Dynamics
+              <ArrowUpRight className="w-3 h-3 opacity-50 group-hover:opacity-100 transition-opacity" />
+            </a>
+          </div>
+
+          <div className="flex items-center gap-2 order-3">
             <span className="hover:text-white transition-colors cursor-pointer">Privacy Policy</span>
             <span>|</span>
             <span className="hover:text-white transition-colors cursor-pointer">Terms of Service</span>

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ArrowDown, ChevronRight } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -16,7 +17,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
   };
 
   return (
-    <section id="home" className="relative h-screen min-h-[600px] w-full overflow-hidden">
+    <section id="home" className="relative h-[100dvh] min-h-[500px] w-full overflow-hidden">
       {/* Main Hero Visual Full Screen */}
       <motion.div
         initial={{ opacity: 0, scale: 1.05 }}
@@ -24,25 +25,30 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
         transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
         className="absolute inset-0 bg-[#1a1815]"
       >
-        <img
-          src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=2400&q=85"
-          alt="Designing Spaces That Define Luxury"
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
           className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1]"
-        />
+        >
+          <source src="/hero-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-black/40" />
       </motion.div>
 
       {/* Hero Content Overlay */}
-      <div className="relative h-full max-w-7xl mx-auto px-6 sm:px-8 flex flex-col justify-end pb-20 sm:pb-28">
+      <div className="relative h-full max-w-7xl mx-auto px-5 sm:px-8 flex flex-col justify-end pt-32 sm:pt-40 pb-10 sm:pb-16">
         <div className="max-w-3xl">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.2 }}
-            className="font-serif-luxury text-5xl sm:text-7xl lg:text-8xl font-light text-white leading-[1.05] tracking-tight mb-4 sm:mb-6"
+            className="font-serif-luxury text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-white leading-[1.1] sm:leading-[1.05] tracking-tight mb-4 sm:mb-6"
           >
-            Designing Spaces <br />
-            That Define Luxury
+            Designing Spaces <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>That Define Luxury
           </motion.h1>
 
           <motion.p
@@ -59,18 +65,18 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.5 }}
-            className="flex flex-wrap items-center gap-4 sm:gap-6"
+            className="flex flex-col sm:flex-row sm:items-center items-start gap-5 sm:gap-6"
           >
             <div className="flex items-center gap-2">
               <button
                 onClick={onExploreClick}
-                className="bg-white text-[#1c1a17] hover:bg-[#f5f2eb] px-6 py-3.5 rounded-md text-sm font-semibold tracking-wide transition-colors shadow-lg cursor-pointer"
+                className="bg-white text-[#1c1a17] hover:bg-[#f5f2eb] px-5 sm:px-6 py-3 sm:py-3.5 rounded-md text-sm font-semibold tracking-wide transition-colors shadow-lg cursor-pointer"
               >
                 Explore Designs
               </button>
               <button
                 onClick={onExploreClick}
-                className="bg-white text-[#1c1a17] hover:bg-[#f5f2eb] w-12 h-[50px] rounded-md flex items-center justify-center transition-colors shadow-lg cursor-pointer"
+                className="bg-white text-[#1c1a17] hover:bg-[#f5f2eb] w-11 h-[44px] sm:w-12 sm:h-[50px] rounded-md flex items-center justify-center transition-colors shadow-lg cursor-pointer"
                 aria-label="Explore Designs"
               >
                 <ChevronRight className="w-5 h-5" />
@@ -79,7 +85,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
 
             <button
               onClick={onOpenContact}
-              className="text-white hover:text-white/80 text-sm font-medium tracking-wide transition-colors cursor-pointer border-b border-white pb-0.5"
+              className="text-white hover:text-white/80 text-sm font-medium tracking-wide transition-colors cursor-pointer border-b border-white pb-0.5 mt-2 sm:mt-0"
             >
               Book a Private Tour
             </button>
@@ -91,7 +97,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.6 }}
-          className="absolute bottom-10 right-8 sm:bottom-12 sm:right-12"
+          className="absolute bottom-6 right-5 sm:bottom-12 sm:right-12 hidden sm:block"
         >
           <button
             onClick={scrollToAbout}

@@ -14,7 +14,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenContactW
   const activeCategory = SERVICE_CATEGORIES.find((cat) => cat.id === selectedCategory) || SERVICE_CATEGORIES[0];
 
   return (
-    <section id="services" className="py-20 lg:py-32 bg-[#f6f4f0]">
+    <section id="services" className="pt-10 lg:pt-16 pb-10 lg:pb-16 bg-[#f6f4f0]">
       <div className="max-w-[1400px] mx-auto px-6 sm:px-12">
         {/* Split Layout: Left Sticky Title & Categories, Right Accordion List */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-start">
@@ -54,20 +54,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenContactW
               })}
             </div>
 
-            <div className="flex items-center gap-2">
-              <button
-                onClick={() => onOpenContactWithService('General Design Services')}
-                className="bg-[#4a4641] text-white hover:bg-[#33302d] px-6 py-3 rounded-md text-xs sm:text-sm font-semibold transition-colors cursor-pointer"
-              >
-                See All Project
-              </button>
-              <button
-                onClick={() => onOpenContactWithService('General Design Services')}
-                className="bg-[#4a4641] text-white hover:bg-[#33302d] w-12 h-[46px] rounded-md flex items-center justify-center transition-colors cursor-pointer"
-              >
-                <ChevronRight className="w-5 h-5" />
-              </button>
-            </div>
+
           </motion.div>
 
           {/* Right Column: Numbered Projects Accordion */}
@@ -125,10 +112,6 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenContactW
                                   className="w-full aspect-[16/9] sm:aspect-[2/1] object-cover"
                                 />
                               </div>
-
-                              <p className="text-[#6e6a64] text-xs sm:text-sm leading-relaxed max-w-3xl">
-                                {proj.description}
-                              </p>
                             </div>
                           </motion.div>
                         )}
