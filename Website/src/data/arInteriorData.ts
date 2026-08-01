@@ -11,49 +11,49 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
   {
     id: 'shaazz-coastal',
     studioName: 'Shaazz Interior Studio',
-    title: 'Luminary Luxury Wardrobe',
-    location: 'Syracuse, Connecticut',
-    description: 'Minimalist luxury interiors with premium materials, open spaces, and calming ocean-inspired elegance.',
-    price: '$19,500.00',
+    title: 'Luxury Glass Wardrobe',
+    location: 'Lahore, Punjab',
+    description: 'Simple and beautiful wardrobe design made with strong wood, glass, and warm lights.',
+    price: 'Rs. 1,950,000',
     imageUrl: '/showcase-1.png',
-    hotspotTitle: 'Infinity View Concept',
-    hotspotDesc: 'Panoramic floor-to-ceiling glass architecture',
+    hotspotTitle: 'Glass Door View',
+    hotspotDesc: 'Big glass doors with clear inside view',
     hotspotImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 'private-sanctuary',
     studioName: 'Eloria Architectural Studio',
-    title: 'The Table Kitchen',
-    location: 'Coral Gables, FL',
-    description: 'A perfect balance of modern design and tranquil textures, creating an elegant space for relaxation and high-end entertaining.',
-    price: '$28,000.00',
+    title: 'Modern Table Kitchen',
+    location: 'Islamabad',
+    description: 'A clean modern kitchen with table island, strong marble top, and neat wooden cabinets.',
+    price: 'Rs. 2,800,000',
     imageUrl: '/showcase-2.png',
-    hotspotTitle: 'Architectural Light Well',
-    hotspotDesc: 'Natural daylight integration with acoustic wood panels',
+    hotspotTitle: 'Wooden Ceiling & Light',
+    hotspotDesc: 'Warm ceiling lights with wood panels',
     hotspotImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 'penthouse-serenity',
     studioName: 'Aethel Luxury Concepts',
-    title: 'The VIP Lounge',
-    location: 'Manhattan, New York',
-    description: 'Custom marble finishes, bespoke Italian furniture, and ambient warm lighting tailored for cosmopolitan living.',
-    price: '$42,500.00',
+    title: 'Comfortable VIP Lounge',
+    location: 'Faisalabad, Punjab',
+    description: 'Beautiful living room with marble walls, soft sofa seats, and warm wall lights.',
+    price: 'Rs. 4,250,000',
     imageUrl: '/showcase-3.png',
-    hotspotTitle: 'Bespoke Marble Hearth',
-    hotspotDesc: 'Hand-carved Calacatta Viola stone fireplace',
+    hotspotTitle: 'Marble Wall Design',
+    hotspotDesc: 'Real marble wall with back light',
     hotspotImage: 'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=600&q=80'
   },
   {
     id: 'modern-wardrobe',
     studioName: 'Aethel Luxury Concepts',
-    title: 'The Smart TV Wall',
-    location: 'Los Angeles, CA',
-    description: 'A beautifully lit, glass-front wardrobe integrating subtle backlighting and elegant wood finishing.',
-    price: '$15,000.00',
+    title: 'Smart TV & Wall Unit',
+    location: 'Sargodha, Punjab',
+    description: 'Modern TV wall unit with LED lights and smooth wooden sheet finish.',
+    price: 'Rs. 1,500,000',
     imageUrl: '/showcase-4.png',
-    hotspotTitle: 'Integrated Lighting',
-    hotspotDesc: 'Concealed LED strips for ambient illumination',
+    hotspotTitle: 'LED Strip Lighting',
+    hotspotDesc: 'Hidden LED lights for bright look',
     hotspotImage: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=600&q=80'
   }
 ];
@@ -61,7 +61,7 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
 export const SERVICE_CATEGORIES: ServiceCategory[] = [
   {
     id: 'residential',
-    name: 'Luxury Kitchen',
+    name: 'Modern Kitchens',
     projects: [
       {
         number: '01',
@@ -77,7 +77,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       },
       {
         number: '03',
-        title: 'Bespoke Oak Kitchen',
+        title: 'Wooden Cabinet Kitchen',
         description: '',
         imageUrl: '/Kitchen-3.jpg'
       }
@@ -95,13 +95,13 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       },
       {
         number: '02',
-        title: 'Luxury Walk-in Closet',
+        title: 'Walk-in Closet',
         description: '',
         imageUrl: '/wardrobe-2.png'
       },
       {
         number: '03',
-        title: 'Bespoke Wooden Wardrobe',
+        title: 'Wooden Wardrobe',
         description: '',
         imageUrl: '/wardrobe-3.png'
       }
@@ -109,23 +109,23 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
   },
   {
     id: 'furniture',
-    name: 'Media Tv Walls',
+    name: 'Media TV Walls',
     projects: [
       {
         number: '01',
-        title: 'Contemporary Media Wall',
+        title: 'Contemporary TV Wall',
         description: '',
         imageUrl: '/Media-wall-1.png'
       },
       {
         number: '02',
-        title: 'Minimalist Media Center',
+        title: 'Simple Media Center',
         description: '',
         imageUrl: '/Media-wall-2.png'
       },
       {
         number: '03',
-        title: 'Luxury Media Lounge',
+        title: 'Luxury TV Lounge',
         description: '',
         imageUrl: '/Media-wall-3.png'
       }
@@ -137,7 +137,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
     projects: [
       {
         number: '01',
-        title: 'Minimalist Interior Design',
+        title: 'Simple Interior Design',
         description: '',
         imageUrl: '/interior-design-1.png'
       },
@@ -149,7 +149,7 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
       },
       {
         number: '03',
-        title: 'Elegant Bedroom Design',
+        title: 'Bedroom Interior Design',
         description: '',
         imageUrl: '/showcase-3.png'
       }
@@ -161,100 +161,184 @@ export const LISTINGS_DATA: ListingItem[] = [
   {
     id: 'wardrobe-1',
     title: 'Modern Glass Wardrobe',
-    location: 'Syracuse, Connecticut',
+    location: 'Lahore, Punjab',
     imageUrl: '/wardrobe-1.png',
-    category: 'Wardrobes'
+    category: 'Wardrobes',
+    features: [
+      'Tinted Black Glass Doors',
+      'Strong Aluminum Frame',
+      'Warm Hanger LED Lights',
+      'Soft Velvet Drawers'
+    ]
   },
   {
     id: 'wardrobe-2',
     title: 'Luxury Walk-in Closet',
-    location: 'Syracuse, Connecticut',
+    location: 'Sargodha, Punjab',
     imageUrl: '/wardrobe-2.png',
-    category: 'Wardrobes'
+    category: 'Wardrobes',
+    features: [
+      'Open Clothes Hanging Racks',
+      'Full Length Wall Mirror',
+      'Tactile Wooden Finish Sheet',
+      'Soft Close Drawer System'
+    ]
   },
   {
     id: 'wardrobe-3',
-    title: 'Bespoke Wooden Wardrobe',
-    location: 'Syracuse, Connecticut',
+    title: 'Wooden Sheet Wardrobe',
+    location: 'Islamabad',
     imageUrl: '/wardrobe-3.png',
-    category: 'Wardrobes'
+    category: 'Wardrobes',
+    features: [
+      'High Quality MDF Board Sheet',
+      'Stainless Steel Handles',
+      'Adjustable Storage Shelves',
+      'Built-in Locker Box'
+    ]
   },
   {
     id: 'wardrobe-4',
-    title: 'Elegant Display Wardrobe',
-    location: 'Syracuse, Connecticut',
+    title: 'Display Wardrobe with Lights',
+    location: 'Faisalabad, Punjab',
     imageUrl: '/wardrobe-4.png',
-    category: 'Wardrobes'
+    category: 'Wardrobes',
+    features: [
+      'Glass Shelves for Display',
+      'Sensor Touch Light Strip',
+      'High Gloss UV Sheet',
+      'Double Door Storage Area'
+    ]
   },
   {
     id: 'media-wall-1',
-    title: 'Contemporary Media Wall',
-    location: 'Syracuse, Connecticut',
+    title: 'Modern TV Media Wall',
+    location: 'Sargodha, Punjab',
     imageUrl: '/Media-wall-1.png',
-    category: 'Media Walls'
+    category: 'Media Walls',
+    features: [
+      'Marble Fluted Wall Panels',
+      'Floating Lower Console',
+      'Hidden Wire & Cable Box',
+      'Warm LED Backlight'
+    ]
   },
   {
     id: 'media-wall-2',
-    title: 'Minimalist Media Center',
-    location: 'Syracuse, Connecticut',
+    title: 'Simple Media Center',
+    location: 'Lahore, Punjab',
     imageUrl: '/Media-wall-2.png',
-    category: 'Media Walls'
+    category: 'Media Walls',
+    features: [
+      'Matte Finish MDF Panel',
+      'Set-Top Box Drawers',
+      'Side Display Shelves',
+      'Clean Wall TV Mount'
+    ]
   },
   {
     id: 'media-wall-3',
-    title: 'Luxury Media Lounge',
-    location: 'Syracuse, Connecticut',
+    title: 'Luxury TV Lounge Wall',
+    location: 'Islamabad',
     imageUrl: '/Media-wall-3.png',
-    category: 'Media Walls'
+    category: 'Media Walls',
+    features: [
+      'Large Marble Sheet Panel',
+      'Electric Fireplace Space',
+      'Glass Display Cabinets',
+      'LED Profile Lighting'
+    ]
   },
   {
     id: 'media-wall-4',
-    title: 'Bespoke Entertainment Unit',
-    location: 'Syracuse, Connecticut',
+    title: 'Entertainment TV Unit',
+    location: 'Multan, Punjab',
     imageUrl: '/Media-wall-4.png',
-    category: 'Media Walls'
+    category: 'Media Walls',
+    features: [
+      'Textured Wood Strip Panel',
+      'Storage Drawers & Cabinets',
+      'Soundbar Speaker Slot',
+      'Durable Frame Base'
+    ]
   },
   {
     id: 'kitchen-1',
     title: 'Modern Classic Kitchen',
-    location: 'Syracuse, Connecticut',
+    location: 'Lahore, Punjab',
     imageUrl: '/Kitchen-1.png',
-    category: 'Kitchens'
+    category: 'Kitchens',
+    features: [
+      'White Marble Countertop',
+      'Soft Close Door Hinges',
+      'Steel Sink & Water Tap',
+      'Built-in Microwave Space'
+    ]
   },
   {
     id: 'kitchen-2',
     title: 'Luxury Marble Kitchen',
-    location: 'Syracuse, Connecticut',
+    location: 'Sargodha, Punjab',
     imageUrl: '/Kitchen-2.jpg',
-    category: 'Kitchens'
+    category: 'Kitchens',
+    features: [
+      'Dark Granite Top Surface',
+      'High Gloss Acrylic Sheet',
+      'Under-Cabinet LED Strip',
+      'Pull-Out Basket Drawers'
+    ]
   },
   {
     id: 'kitchen-3',
-    title: 'Bespoke Oak Kitchen',
-    location: 'Syracuse, Connecticut',
+    title: 'Wooden Cabinet Kitchen',
+    location: 'Islamabad',
     imageUrl: '/Kitchen-3.jpg',
-    category: 'Kitchens'
+    category: 'Kitchens',
+    features: [
+      'Wood Grain Sheet Cabinets',
+      'Quartz Countertop Surface',
+      'Cutlery Storage Drawers',
+      'Corner Rack Storage'
+    ]
   },
   {
     id: 'kitchen-4',
-    title: 'Minimalist Open Kitchen',
-    location: 'Syracuse, Connecticut',
+    title: 'Simple Open Kitchen',
+    location: 'Faisalabad, Punjab',
     imageUrl: '/Kitchen-4.jpg',
-    category: 'Kitchens'
+    category: 'Kitchens',
+    features: [
+      'Compact L-Shape Counter',
+      'Easy Clean PVC Edge Banding',
+      'Exhaust Fan Hood Space',
+      'Waterproof Sink Base'
+    ]
   },
   {
     id: 'kitchen-5',
-    title: 'Contemporary Island Kitchen',
-    location: 'Syracuse, Connecticut',
+    title: 'Island Table Kitchen',
+    location: 'Rawalpindi, Punjab',
     imageUrl: '/Kitchen-5.jpg',
-    category: 'Kitchens'
+    category: 'Kitchens',
+    features: [
+      'Center Table Island Counter',
+      'Dual Marble Top Counter',
+      'Trash Can & Bottle Rack',
+      'High Spout Water Fitting'
+    ]
   },
   {
     id: 'kitchen-6',
-    title: 'Elegant Chef Kitchen',
-    location: 'Syracuse, Connecticut',
+    title: 'Chef Style Kitchen',
+    location: 'Sargodha, Punjab',
     imageUrl: '/Kitchen-6.PNG',
-    category: 'Kitchens'
+    category: 'Kitchens',
+    features: [
+      'Deep Steel Kitchen Sink',
+      'Double Marble Countertop',
+      'Gas Stove Counter Top',
+      'Tall Pantry Storage Unit'
+    ]
   }
 ];
 

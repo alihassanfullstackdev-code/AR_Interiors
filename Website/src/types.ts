@@ -29,6 +29,7 @@ export interface ListingItem {
   price?: string;
   imageUrl: string;
   category: string;
+  features?: string[];
   specs?: {
     beds: number;
     baths: number;

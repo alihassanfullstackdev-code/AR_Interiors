@@ -131,10 +131,10 @@ export const AboutStatsSection: React.FC = () => {
             className="md:col-span-5 flex flex-col pt-2 md:pt-14"
           >
             <h2 className="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl font-light text-[#1c1a17] leading-[1.1] mb-6">
-              Timeless Interiors<br />Elevated Living
+              Beautiful Homes &<br />Modern Woodwork
             </h2>
             <p className="text-[#6e6a64] text-sm sm:text-base leading-relaxed mb-10 max-w-[420px]">
-              Specializing in luxury interiors, we transform spaces into refined living experiences. Every project is thoughtfully designed.
+              We specialize in home interior design and high-quality woodwork in Pakistan. We build kitchens, wardrobes, and TV walls with great care.
             </p>
             <div className="flex items-center gap-2">
               <button onClick={() => setIsStoryModalOpen(true)} className="bg-[#4a4641] text-white hover:bg-[#33302d] px-6 py-3 rounded-md text-sm font-medium transition-colors cursor-pointer">

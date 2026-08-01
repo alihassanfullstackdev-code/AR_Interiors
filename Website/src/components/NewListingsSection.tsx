@@ -43,12 +43,12 @@ export const NewListingsSection: React.FC<NewListingsSectionProps> = ({ onSelect
         >
           <div className="lg:col-span-8">
             <h2 className="font-serif-luxury text-3xl sm:text-5xl font-light text-[#1c1a17] leading-tight">
-              Discover Newly Curated <span className="italic text-[#a88a58]">Luxury Interiors</span>
+              Discover Our Latest <span className="italic text-[#a88a58]">Interior Designs</span>
             </h2>
           </div>
           <div className="lg:col-span-4">
             <p className="text-[#6e6a64] text-sm sm:text-base leading-relaxed">
-              Available for private acquisition or spatial design customization across prime locations.
+              Choose your favorite design or customize it for your home.
             </p>
           </div>
         </motion.div>

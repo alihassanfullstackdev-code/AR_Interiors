@@ -94,7 +94,6 @@ export function App() {
       <ListingDetailModal
         listing={selectedListing}
         onClose={() => setSelectedListing(null)}
-        onBookConsultation={handleOpenContactWithService}
       />
 
       {/* Floating WhatsApp Button */}

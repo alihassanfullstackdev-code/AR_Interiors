@@ -27,8 +27,8 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenContactW
             className="lg:col-span-5 lg:sticky lg:top-32"
           >
             <h2 className="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl text-[#1c1a17] leading-[1.1] mb-16 max-w-sm">
-              Curate, Design & <br />
-              Elevate with Aethel
+              Our Special <br />
+              Interior Services
             </h2>
 
             {/* Vertical Category Selection List */}

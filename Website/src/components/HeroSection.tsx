@@ -47,8 +47,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
             transition={{ duration: 0.7, delay: 0.2 }}
             className="font-serif-luxury text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light text-white leading-[1.1] sm:leading-[1.05] tracking-tight mb-4 sm:mb-6"
           >
-            Designing Spaces <br className="hidden sm:block" />
-            <span className="sm:hidden"> </span>That Define Luxury
+            Beautiful Interiors <br className="hidden sm:block" />
+            <span className="sm:hidden"> </span>For Your Dream Home
           </motion.h1>
 
           <motion.p
@@ -57,7 +57,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
             transition={{ duration: 0.7, delay: 0.35 }}
             className="text-white/80 text-sm sm:text-base lg:text-lg max-w-xl font-light leading-relaxed mb-8 sm:mb-10"
           >
-            Explore exclusive interiors designed for comfort elegance and modern living Nationwide.
+            We make modern kitchens, spacious wardrobes, and beautiful TV walls for homes across Pakistan.
           </motion.p>
 
           {/* Action Buttons */}

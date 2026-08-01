@@ -1,18 +1,16 @@
 import React from 'react';
 import { ListingItem } from '../types';
 import { motion } from 'motion/react';
-import { X, MapPin, Bed, Bath, Maximize2, Tag, Check, Calendar } from 'lucide-react';
+import { X, Check } from 'lucide-react';
 
 interface ListingDetailModalProps {
   listing: ListingItem | null;
   onClose: () => void;
-  onBookConsultation: (serviceName: string) => void;
 }
 
 export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
   listing,
   onClose,
-  onBookConsultation,
 }) => {
   if (!listing) return null;
 
@@ -35,7 +33,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
         {/* Top Tag & Price */}
         <div className="flex items-center justify-between gap-4 mb-2 pr-10">
           <span className="text-xs font-semibold uppercase tracking-widest text-[#a88a58]">
-            {listing.category} • Spatial Listing
+            {listing.category}
           </span>
           <span className="font-serif-luxury text-2xl font-bold text-[#1c1a17]">
             {listing.price}
@@ -46,10 +44,7 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
           {listing.title}
         </h2>
 
-        <div className="flex items-center gap-1.5 text-xs text-[#6e6a64] font-medium mb-6">
-          <MapPin className="w-3.5 h-3.5 text-[#a88a58]" />
-          <span>{listing.location}</span>
-        </div>
+
 
         {/* Hero Image */}
         <div className="rounded-2xl overflow-hidden aspect-[16/9] mb-6 bg-[#1e1c19] border border-[#1c1a17]/10 shadow-md">
@@ -60,76 +55,23 @@ export const ListingDetailModal: React.FC<ListingDetailModalProps> = ({
           />
         </div>
 
-        {/* Specs Grid */}
-        <div className="grid grid-cols-3 gap-4 p-4 rounded-2xl bg-[#f9f7f2] border border-[#1c1a17]/10 mb-6 text-center">
-          <div>
-            <div className="text-xs text-[#6e6a64] uppercase font-semibold">Bedrooms</div>
-            <div className="font-serif-luxury text-xl font-bold text-[#1c1a17] mt-0.5">
-              {listing.specs.beds} Beds
-            </div>
-          </div>
-
-          <div className="border-x border-[#1c1a17]/10">
-            <div className="text-xs text-[#6e6a64] uppercase font-semibold">Bathrooms</div>
-            <div className="font-serif-luxury text-xl font-bold text-[#1c1a17] mt-0.5">
-              {listing.specs.baths} Baths
-            </div>
-          </div>
-
-          <div>
-            <div className="text-xs text-[#6e6a64] uppercase font-semibold">Area Size</div>
-            <div className="font-serif-luxury text-xl font-bold text-[#1c1a17] mt-0.5">
-              {listing.specs.sqft}
-            </div>
-          </div>
-        </div>
-
-        {/* Description & Materials */}
-        <div className="space-y-4 text-sm text-[#6e6a64] leading-relaxed mb-8">
-          <p>
-            Designed with absolute precision by AR INTERIOR & DESIGN, this spatial concept emphasizes seamless transitions between natural daylight and warm tactile finishes.
-          </p>
-
-          <div className="pt-2">
-            <h4 className="text-xs font-semibold uppercase tracking-wider text-[#1c1a17] mb-2">
-              Key Spatial Features & Finishes:
-            </h4>
-            <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#1c1a17]/80">
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#a88a58]" />
-                Calacatta Viola Natural Stone
+        <div className="mb-2">
+          <h4 className="text-xs font-semibold uppercase tracking-wider text-[#1c1a17] mb-2">
+            Key Features & Materials:
+          </h4>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-2 text-xs text-[#1c1a17]/80">
+            {(listing.features || [
+              'Marble & Granite Countertops',
+              'High Gloss UV & Tactile Sheets',
+              'Warm LED Strip Lights',
+              'Strong Solid Wood & MDF Board'
+            ]).map((feature, idx) => (
+              <li key={idx} className="flex items-center gap-2">
+                <Check className="w-4 h-4 text-[#a88a58] flex-shrink-0" />
+                <span>{feature}</span>
               </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#a88a58]" />
-                European Aged White Oak Joinery
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#a88a58]" />
-                Acoustic Concealed Lighting Layers
-              </li>
-              <li className="flex items-center gap-2">
-                <Check className="w-4 h-4 text-[#a88a58]" />
-                Bespoke Custom Furniture Package
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Action Buttons */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-4 border-t border-[#1c1a17]/10">
-          <span className="text-xs text-[#6e6a64]">
-            Available for immediate acquisition or spatial customization.
-          </span>
-          <button
-            onClick={() => {
-              onClose();
-              onBookConsultation(listing.title);
-            }}
-            className="btn-pill-dark w-full sm:w-auto justify-center"
-          >
-            <Calendar className="w-4 h-4 mr-1" />
-            <span>Schedule Private Viewing</span>
-          </button>
+            ))}
+          </ul>
         </div>
       </motion.div>
     </div>

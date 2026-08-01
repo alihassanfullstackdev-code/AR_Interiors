@@ -17,8 +17,8 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onNavClick, onOpen
         <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8 pb-20">
           <div>
             <h2 className="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl text-[#f5f2eb] leading-[1.1]">
-              Discover Timeless Interiors <br />
-              Crafted for Modern Living
+              Beautiful Interior Design <br />
+              Crafted for Your Home
             </h2>
           </div>
 
