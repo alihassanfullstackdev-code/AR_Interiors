@@ -31,10 +31,10 @@ export const FooterSection: React.FC<FooterSectionProps> = ({ onNavClick, onOpen
           <div>
             <ul className="space-y-4 text-white/80 font-medium text-xs">
               {[
-                { name: 'Facebook', url: 'https://www.facebook.com/share/18uJscQRJ8/?mibextid=wwXIfr' },
+                { name: 'Facebook', url: 'https://www.facebook.com/share/1L6DXoumr2/?mibextid=wwXIfr' },
                 { name: 'Instagram', url: 'https://www.instagram.com/a.r_interior786?igsh=bmtua2k1bjlueHhn' },
                 { name: 'YouTube', url: 'https://youtube.com/@woodworkinfo?si=UHpw8KKMbgpI8YZU' },
-                { name: 'TikTok', url: 'https://www.tiktok.com/@rameezsindhu007?_r=1&_t=ZS-98HfbuiJyse' }
+                { name: 'TikTok', url: 'https://www.tiktok.com/@woodwork.info?_r=1&_t=ZS-98b01wc96zV' }
               ].map((social) => (
                 <li key={social.name} className="border-b border-white/10 pb-2 border-dashed">
                   <a
