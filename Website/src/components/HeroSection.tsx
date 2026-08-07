@@ -30,6 +30,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
           loop
           muted
           playsInline
+          preload="metadata"
+          poster="/showcase-1.webp"
           className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1]"
         >
           <source src="/hero-video.webm" type="video/webm" />

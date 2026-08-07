@@ -91,6 +91,8 @@ export const FeaturedShowcaseSection: React.FC = () => {
             <img
               src={activeProject.imageUrl}
               alt={activeProject.title}
+              loading="lazy"
+              decoding="async"
               className="w-full h-full object-cover"
             />
 

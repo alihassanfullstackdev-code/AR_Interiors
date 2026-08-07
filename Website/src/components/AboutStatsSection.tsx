@@ -118,6 +118,8 @@ export const AboutStatsSection: React.FC = () => {
             <img
               src="/about-left.webp"
               alt="Dining Table"
+              loading="lazy"
+              decoding="async"
               className="w-full sm:w-[80%] aspect-square object-cover rounded-2xl lg:rounded-3xl shadow-xl border border-[#1c1a17]/10"
             />
           </motion.div>
@@ -157,6 +159,8 @@ export const AboutStatsSection: React.FC = () => {
             <img
               src="/about-right.webp"
               alt="Kitchen Interiors"
+              loading="lazy"
+              decoding="async"
               className="w-full aspect-[3/4] object-cover object-center rounded-2xl lg:rounded-3xl shadow-xl border border-[#1c1a17]/10"
             />
           </motion.div>
