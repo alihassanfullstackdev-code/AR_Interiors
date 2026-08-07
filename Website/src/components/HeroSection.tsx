@@ -32,6 +32,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onExploreClick, onOpen
           playsInline
           className="w-full h-full object-cover object-center filter brightness-[0.75] contrast-[1.1]"
         >
+          <source src="/hero-video.webm" type="video/webm" />
           <source src="/hero-video.mp4" type="video/mp4" />
           Your browser does not support the video tag.
         </video>

@@ -116,7 +116,7 @@ export const AboutStatsSection: React.FC = () => {
               ABOUT US
             </span>
             <img
-              src="/about-left.png"
+              src="/about-left.webp"
               alt="Dining Table"
               className="w-full sm:w-[80%] aspect-square object-cover rounded-2xl lg:rounded-3xl shadow-xl border border-[#1c1a17]/10"
             />
@@ -155,7 +155,7 @@ export const AboutStatsSection: React.FC = () => {
             className="md:col-span-4 flex justify-end"
           >
             <img
-              src="/about-right.jpg"
+              src="/about-right.webp"
               alt="Kitchen Interiors"
               className="w-full aspect-[3/4] object-cover object-center rounded-2xl lg:rounded-3xl shadow-xl border border-[#1c1a17]/10"
             />

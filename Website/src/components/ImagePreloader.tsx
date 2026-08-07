@@ -23,16 +23,17 @@ export const ImagePreloader = () => {
       });
 
       // Add static structural images
-      urls.add('/about-left.png');
-      urls.add('/about-right.jpg');
-      urls.add('/hero-video.mp4'); // The browser can cache the video too if requested
+      urls.add('/about-left.webp');
+      urls.add('/about-right.webp');
+      urls.add('/hero-video.webm');
+      urls.add('/hero-video.mp4'); // Fallback video format
 
       // Fire off requests for all images so the browser caches them instantly
       urls.forEach(url => {
-        if (url && !url.endsWith('.mp4')) {
+        if (url && !url.endsWith('.mp4') && !url.endsWith('.webm')) {
           const img = new window.Image();
           img.src = url;
-        } else if (url && url.endsWith('.mp4')) {
+        } else if (url && (url.endsWith('.mp4') || url.endsWith('.webm'))) {
           // Preload video without playing
           const video = document.createElement('video');
           video.preload = 'auto';

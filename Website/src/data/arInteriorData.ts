@@ -15,7 +15,7 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
     location: 'Lahore, Punjab',
     description: 'Simple and beautiful wardrobe design made with strong wood, glass, and warm lights.',
     price: 'Rs. 1,950,000',
-    imageUrl: '/showcase-1.png',
+    imageUrl: '/showcase-1.webp',
     hotspotTitle: 'Glass Door View',
     hotspotDesc: 'Big glass doors with clear inside view',
     hotspotImage: 'https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?auto=format&fit=crop&w=600&q=80'
@@ -27,7 +27,7 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
     location: 'Islamabad',
     description: 'A clean modern kitchen with table island, strong marble top, and neat wooden cabinets.',
     price: 'Rs. 2,800,000',
-    imageUrl: '/showcase-2.png',
+    imageUrl: '/showcase-2.webp',
     hotspotTitle: 'Wooden Ceiling & Light',
     hotspotDesc: 'Warm ceiling lights with wood panels',
     hotspotImage: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=600&q=80'
@@ -39,7 +39,7 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
     location: 'Faisalabad, Punjab',
     description: 'Beautiful living room with marble walls, soft sofa seats, and warm wall lights.',
     price: 'Rs. 4,250,000',
-    imageUrl: '/showcase-3.png',
+    imageUrl: '/showcase-3.webp',
     hotspotTitle: 'Marble Wall Design',
     hotspotDesc: 'Real marble wall with back light',
     hotspotImage: 'https://images.unsplash.com/photo-1600573472591-ee6b68d14c68?auto=format&fit=crop&w=600&q=80'
@@ -51,7 +51,7 @@ export const SHOWCASE_PROJECTS: ShowcaseProject[] = [
     location: 'Sargodha, Punjab',
     description: 'Modern TV wall unit with LED lights and smooth wooden sheet finish.',
     price: 'Rs. 1,500,000',
-    imageUrl: '/showcase-4.png',
+    imageUrl: '/showcase-4.webp',
     hotspotTitle: 'LED Strip Lighting',
     hotspotDesc: 'Hidden LED lights for bright look',
     hotspotImage: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=600&q=80'
@@ -67,19 +67,19 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         number: '01',
         title: 'Modern Classic Kitchen',
         description: '',
-        imageUrl: '/Kitchen-1.png'
+        imageUrl: '/Kitchen-1.webp'
       },
       {
         number: '02',
         title: 'Luxury Marble Kitchen',
         description: '',
-        imageUrl: '/Kitchen-2.jpg'
+        imageUrl: '/Kitchen-2.webp'
       },
       {
         number: '03',
         title: 'Wooden Cabinet Kitchen',
         description: '',
-        imageUrl: '/Kitchen-3.jpg'
+        imageUrl: '/Kitchen-3.webp'
       }
     ]
   },
@@ -91,19 +91,19 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         number: '01',
         title: 'Modern Glass Wardrobe',
         description: '',
-        imageUrl: '/wardrobe-1.png'
+        imageUrl: '/wardrobe-1.webp'
       },
       {
         number: '02',
         title: 'Walk-in Closet',
         description: '',
-        imageUrl: '/wardrobe-2.png'
+        imageUrl: '/wardrobe-2.webp'
       },
       {
         number: '03',
         title: 'Wooden Wardrobe',
         description: '',
-        imageUrl: '/wardrobe-3.png'
+        imageUrl: '/wardrobe-3.webp'
       }
     ]
   },
@@ -115,19 +115,19 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         number: '01',
         title: 'Contemporary TV Wall',
         description: '',
-        imageUrl: '/Media-wall-1.png'
+        imageUrl: '/Media-wall-1.webp'
       },
       {
         number: '02',
         title: 'Simple Media Center',
         description: '',
-        imageUrl: '/Media-wall-2.png'
+        imageUrl: '/Media-wall-2.webp'
       },
       {
         number: '03',
         title: 'Luxury TV Lounge',
         description: '',
-        imageUrl: '/Media-wall-3.png'
+        imageUrl: '/Media-wall-3.webp'
       }
     ]
   },
@@ -139,19 +139,19 @@ export const SERVICE_CATEGORIES: ServiceCategory[] = [
         number: '01',
         title: 'Simple Interior Design',
         description: '',
-        imageUrl: '/interior-design-1.png'
+        imageUrl: '/interior-design-1.webp'
       },
       {
         number: '02',
         title: 'Luxury Lounge Design',
         description: '',
-        imageUrl: '/showcase-2.png'
+        imageUrl: '/showcase-2.webp'
       },
       {
         number: '03',
         title: 'Bedroom Interior Design',
         description: '',
-        imageUrl: '/showcase-3.png'
+        imageUrl: '/showcase-3.webp'
       }
     ]
   }
@@ -162,7 +162,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'wardrobe-1',
     title: 'Modern Glass Wardrobe',
     location: 'Lahore, Punjab',
-    imageUrl: '/wardrobe-1.png',
+    imageUrl: '/wardrobe-1.webp',
     category: 'Wardrobes',
     features: [
       'Tinted Black Glass Doors',
@@ -175,7 +175,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'wardrobe-2',
     title: 'Luxury Walk-in Closet',
     location: 'Sargodha, Punjab',
-    imageUrl: '/wardrobe-2.png',
+    imageUrl: '/wardrobe-2.webp',
     category: 'Wardrobes',
     features: [
       'Open Clothes Hanging Racks',
@@ -188,7 +188,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'wardrobe-3',
     title: 'Wooden Sheet Wardrobe',
     location: 'Islamabad',
-    imageUrl: '/wardrobe-3.png',
+    imageUrl: '/wardrobe-3.webp',
     category: 'Wardrobes',
     features: [
       'High Quality MDF Board Sheet',
@@ -201,7 +201,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'wardrobe-4',
     title: 'Display Wardrobe with Lights',
     location: 'Faisalabad, Punjab',
-    imageUrl: '/wardrobe-4.png',
+    imageUrl: '/wardrobe-4.webp',
     category: 'Wardrobes',
     features: [
       'Glass Shelves for Display',
@@ -214,7 +214,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'media-wall-1',
     title: 'Modern TV Media Wall',
     location: 'Sargodha, Punjab',
-    imageUrl: '/Media-wall-1.png',
+    imageUrl: '/Media-wall-1.webp',
     category: 'Media Walls',
     features: [
       'Marble Fluted Wall Panels',
@@ -227,7 +227,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'media-wall-2',
     title: 'Simple Media Center',
     location: 'Lahore, Punjab',
-    imageUrl: '/Media-wall-2.png',
+    imageUrl: '/Media-wall-2.webp',
     category: 'Media Walls',
     features: [
       'Matte Finish MDF Panel',
@@ -240,7 +240,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'media-wall-3',
     title: 'Luxury TV Lounge Wall',
     location: 'Islamabad',
-    imageUrl: '/Media-wall-3.png',
+    imageUrl: '/Media-wall-3.webp',
     category: 'Media Walls',
     features: [
       'Large Marble Sheet Panel',
@@ -253,7 +253,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'media-wall-4',
     title: 'Entertainment TV Unit',
     location: 'Multan, Punjab',
-    imageUrl: '/Media-wall-4.png',
+    imageUrl: '/Media-wall-4.webp',
     category: 'Media Walls',
     features: [
       'Textured Wood Strip Panel',
@@ -266,7 +266,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'kitchen-1',
     title: 'Modern Classic Kitchen',
     location: 'Lahore, Punjab',
-    imageUrl: '/Kitchen-1.png',
+    imageUrl: '/Kitchen-1.webp',
     category: 'Kitchens',
     features: [
       'White Marble Countertop',
@@ -279,7 +279,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'kitchen-2',
     title: 'Luxury Marble Kitchen',
     location: 'Sargodha, Punjab',
-    imageUrl: '/Kitchen-2.jpg',
+    imageUrl: '/Kitchen-2.webp',
     category: 'Kitchens',
     features: [
       'Dark Granite Top Surface',
@@ -292,7 +292,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'kitchen-3',
     title: 'Wooden Cabinet Kitchen',
     location: 'Islamabad',
-    imageUrl: '/Kitchen-3.jpg',
+    imageUrl: '/Kitchen-3.webp',
     category: 'Kitchens',
     features: [
       'Wood Grain Sheet Cabinets',
@@ -305,7 +305,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'kitchen-4',
     title: 'Simple Open Kitchen',
     location: 'Faisalabad, Punjab',
-    imageUrl: '/Kitchen-4.jpg',
+    imageUrl: '/Kitchen-4.webp',
     category: 'Kitchens',
     features: [
       'Compact L-Shape Counter',
@@ -318,7 +318,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'kitchen-5',
     title: 'Island Table Kitchen',
     location: 'Rawalpindi, Punjab',
-    imageUrl: '/Kitchen-5.jpg',
+    imageUrl: '/Kitchen-5.webp',
     category: 'Kitchens',
     features: [
       'Center Table Island Counter',
@@ -331,7 +331,7 @@ export const LISTINGS_DATA: ListingItem[] = [
     id: 'kitchen-6',
     title: 'Chef Style Kitchen',
     location: 'Sargodha, Punjab',
-    imageUrl: '/Kitchen-6.PNG',
+    imageUrl: '/Kitchen-6.webp',
     category: 'Kitchens',
     features: [
       'Deep Steel Kitchen Sink',
